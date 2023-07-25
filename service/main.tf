@@ -12,3 +12,12 @@ resource "azurerm_linux_web_app" "web-app" {
   app_settings = var.app_settings
   tags = var.tags
 }
+#Restrict Front Door
+#- ip_restriction {
+#- action      = "Allow" -> null
+#- headers     = [] -> null
+#- name        = "frontdoor" -> null
+#- priority    = 100 -> null
+#- service_tag = "AzureFrontDoor.Backend" -> null
+#}
+#
